@@ -1,0 +1,72 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "jargon",
+	"patterns": [
+		{
+		  "name": "comment.jargon",
+		  "match": "#.*"
+		},
+		{
+			"name": "variables.jargon",
+			"match": "\\$\\w+\\b"
+		},  
+		{
+		  "name": "ifelse.jargon",
+		  "match": "(@if|@elseif|@else|@endif)"
+		},
+		{
+		  "name": "label.jargon",
+		  "match": "@[\\w-]+:?"
+		},
+		{
+		  "name": "procedural-bounds.jargon",
+		  "match": "^\\+{3}( ([\\w-]+)\\b)?"
+		},
+		{
+			"name": "dash.jargon",
+			"match": "(^|;|\\+{3})\\s*(-{1,2})"
+		  },
+		{
+		  "name": "instruction.jargon",
+		  "match": "(^|;)\\w+(-{1,2}).*[$#]"
+		},
+		{
+			"name": "star.jargon",
+			"match": "(^|;)\\s*\\*"
+		  },
+		  {
+			"name": "axiom.jargon",
+			"match": "(^|;)\\s*\\*.*$"
+		  },
+			{
+		  "name": "interpreter-command.jargon",
+		  "match": "/\\w+|goto"
+		},
+		{
+		  "name": "type-expression.jargon",
+		  "begin": "\\[",
+		  "end": "\\]",
+		  "patterns": [
+			{
+			  "name": "type-expression.content.jargon",
+			  "match": "[^\\]]+"
+			}
+		  ]
+		},
+		{
+		  "name": "scope.jargon",
+		  "begin": "\\{",
+		  "end": "\\}",
+		  "patterns": [
+			{
+			  "include": "#instruction.jargon"
+			},
+			{
+			  "include": "#axiom.jargon"
+			}
+		  ]
+		}
+	],
+	"scopeName": "source.jargon",
+	"fileTypes": [".jargon", ".jarg"]
+}

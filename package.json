@@ -1,0 +1,32 @@
+{
+  "name": "jargon",
+  "displayName": "jargon",
+  "description": "A syntax highlighter for Jargon, an LLM pseudolanguage.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.77.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "jargon",
+      "aliases": ["jargon", "Jargon"],
+      "extensions": [".jarg", ".jargon"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "jargon",
+      "scopeName": "source.jargon",
+      "path": "./syntaxes/jargon.tmLanguage.json"
+    }],
+    "themes": [
+      {
+        "label": "Jargon Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/jargon.tmTheme.json"
+      }
+    ]
+  }
+}

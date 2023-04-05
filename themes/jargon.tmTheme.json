@@ -1,0 +1,97 @@
+{
+    "name": "Jargon Theme",
+    "type": "dark",
+    "colors": {
+      "editor.foreground": "#FFFFFF",
+      "editor.background": "#1E1E1E",
+      "editor.selectionBackground": "#3A3D41",
+      "editor.lineHighlightBackground": "#0C0C0C"
+    },
+    "tokenColors": [
+      {
+        "name": "Jargon: Label",
+        "scope": "label.jargon",
+        "settings": {
+            "foreground": "#DC143C"
+        }
+      },
+      {
+        "name": "Jargon: Comment",
+        "scope": "comment.jargon",
+        "settings": {
+          "foreground": "#6A9955"
+        }
+      },
+      {
+        "name": "Jargon: Variables",
+        "scope": "variables.jargon",
+        "settings": {
+          "foreground": "#FF6961"
+        }
+      },
+      {
+        "name": "Jargon: If-Else",
+        "scope": "ifelse.jargon",
+        "settings": {
+          "foreground": "#FFA500"
+        }
+      },
+      {
+        "name": "Jargon: Procedural Bounds",
+        "scope": "procedural-bounds.jargon",
+        "settings": {
+          "foreground": "#999999",
+        }
+      },
+      {
+        "name": "Jargon: Dash",
+        "scope": "dash.jargon",
+        "settings": {
+          "foreground": "#569CD6"
+        }
+      },
+      {
+        "name": "Jargon: Instruction",
+        "scope": "instruction.jargon",
+        "settings": {
+          "foreground": "#DCDCAA"
+        }
+      },
+      {
+        "name": "Jargon: Star",
+        "scope": "star.jargon",
+        "settings": {
+          "foreground": "#569CD6"
+        }
+      },
+      {
+        "name": "Jargon: Axiom",
+        "scope": "axiom.jargon",
+        "settings": {
+          "foreground": "#9CDCFE"
+        }
+      },
+      {
+        "name": "Jargon: Interpreter Command",
+        "scope": "interpreter-command.jargon",
+        "settings": {
+          "foreground": "#4EC9B0"
+        }
+      },
+      {
+        "name": "Jargon: Type Expression",
+        "scope": "type-expression.jargon",
+        "settings": {
+          "foreground": "#C586C0"
+        }
+      },
+      {
+        "name": "Jargon: Scope",
+        "scope": "scope.jargon",
+        "settings": {
+          "foreground": "#CE9178"
+        }
+      }
+    ]
+  }
+  
