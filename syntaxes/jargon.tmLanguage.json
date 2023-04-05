@@ -23,13 +23,13 @@
 		  "match": "^\\+{3}( ([\\w-]+)\\b)?"
 		},
 		{
+		   "name": "caps.jargon",
+		   "match": "[A-Z-_]{2,}"
+		},
+		{
 			"name": "dash.jargon",
 			"match": "(^|;|\\+{3})\\s*(-{1,2})"
 		  },
-		{
-		  "name": "instruction.jargon",
-		  "match": "(^|;)\\w+(-{1,2}).*[$#]"
-		},
 		{
 			"name": "star.jargon",
 			"match": "(^|;)\\s*\\*"
@@ -65,7 +65,12 @@
 			  "include": "#axiom.jargon"
 			}
 		  ]
+		},
+		{
+		"name": "instruction.jargon",
+		"match": "[^$\\[\\]@]|(^goto)+"
 		}
+  
 	],
 	"scopeName": "source.jargon",
 	"fileTypes": [".jargon", ".jarg"]

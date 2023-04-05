@@ -30,6 +30,13 @@
         }
       },
       {
+        "name": "Jargon: Caps",
+        "scope": "caps.jargon",
+        "settings": {
+            "foreground": "#87CEEB"
+        }
+      },
+      {
         "name": "Jargon: If-Else",
         "scope": "ifelse.jargon",
         "settings": {
