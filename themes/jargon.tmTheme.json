@@ -87,11 +87,19 @@
       },
       {
         "name": "Jargon: Type Expression",
-        "scope": "type-expression.jargon",
+        "scope": "type-expression.content.jargon",
         "settings": {
           "foreground": "#C586C0"
         }
       },
+      {
+        "name": "Jargon: Type Expression Variables",
+        "scope": "type-expression.variable.jargon",
+        "settings": {
+          "foreground": "#FF6961"
+        }
+      },
+      
       {
         "name": "Jargon: Scope",
         "scope": "scope.jargon",

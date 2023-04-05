@@ -48,8 +48,12 @@
 		  "end": "\\]",
 		  "patterns": [
 			{
+				"name": "type-expression.variable.jargon",
+				"match": "\\$\\w+[\\w-]*\\w+"
+			},
+			{
 			  "name": "type-expression.content.jargon",
-			  "match": "[^\\]]+"
+			  "match": "[^\\]\\$]+"
 			}
 		  ]
 		},
