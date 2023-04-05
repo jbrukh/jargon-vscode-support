@@ -3,6 +3,9 @@
 	"name": "jargon",
 	"patterns": [
 		{
+			"include": "#numbers"
+		},
+		{
 		  "name": "comment.jargon",
 		  "match": "#.*"
 		},
@@ -19,6 +22,10 @@
 		  "match": "@[\\w-]+:?"
 		},
 		{
+			"name": "error.jargon",
+			"match": "%\\w+([\\w-]+\\w+)?"
+		},
+		{
 		  "name": "procedural-bounds.jargon",
 		  "match": "^\\+{3}( ([\\w-]+)\\b)?"
 		},
@@ -26,10 +33,7 @@
 		   "name": "caps.jargon",
 		   "match": "[A-Z-_]{2,}"
 		},
-		{
-			"name": "dash.jargon",
-			"match": "(^|;|\\+{3})\\s*(-{1,2})"
-		  },
+		
 		{
 			"name": "star.jargon",
 			"match": "(^|;)\\s*\\*"
@@ -40,7 +44,7 @@
 		  },
 			{
 		  "name": "interpreter-command.jargon",
-		  "match": "/\\w+|goto"
+		  "match": "/\\w+([\\w-]*\\w+)?"
 		},
 		{
 		  "name": "type-expression.jargon",
@@ -49,7 +53,7 @@
 		  "patterns": [
 			{
 				"name": "type-expression.variable.jargon",
-				"match": "\\$\\w+[\\w-]*\\w+"
+				"match": "\\$\\w+([\\w-]*\\w+)?"
 			},
 			{
 			  "name": "type-expression.content.jargon",

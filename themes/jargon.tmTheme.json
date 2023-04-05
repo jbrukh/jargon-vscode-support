@@ -12,7 +12,7 @@
         "name": "Jargon: Label",
         "scope": "label.jargon",
         "settings": {
-            "foreground": "#DC143C"
+            "foreground": "#FFA07A"
         }
       },
       {
@@ -51,13 +51,6 @@
         }
       },
       {
-        "name": "Jargon: Dash",
-        "scope": "dash.jargon",
-        "settings": {
-          "foreground": "#569CD6"
-        }
-      },
-      {
         "name": "Jargon: Instruction",
         "scope": "instruction.jargon",
         "settings": {
@@ -90,6 +83,13 @@
         "scope": "type-expression.content.jargon",
         "settings": {
           "foreground": "#C586C0"
+        }
+      },
+      {
+        "name": "Jargon: Errors",
+        "scope": "error.jargon",
+        "settings": {
+          "foreground": "#FF0000"
         }
       },
       {
